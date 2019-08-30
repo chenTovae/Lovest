@@ -1,0 +1,13 @@
+include ':app',
+        ':base',
+        ':network',
+        ':database',
+        ':download',
+        ':img-loader',
+        ':img-picker',
+        ':platform',
+        ':player',
+        ':share',
+        ':startup',
+        ':upload',
+        ':push'

@@ -1,0 +1,42 @@
+<resources>
+    <style name="Permission"/>
+
+    <style name="Permission.Theme">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Dialog_Permission" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/platform_dialog_permission_shape_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Dialog_Permission_Title">
+        <item name="android:textColor">@color/color_000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Dialog_Permission_Msg">
+        <item name="android:textColor">@color/color_80000000</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="dialog_btn_text_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/platform_btn_text_color_selector</item>
+    </style>
+
+    <style name="Dialog_Permission_PositiveButton" parent="@style/dialog_btn_text_style">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/color_fe5353</item>
+    </style>
+
+</resources>

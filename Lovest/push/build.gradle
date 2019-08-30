@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':platform')
+
+    implementation 'com.getui:sdk:2.13.2.0'//个推
+    implementation 'com.tencent.xinge:xinge:3.2.3-release'//信鸽
+    implementation 'com.tencent.wup:wup:1.0.0.E-release'//wup包
+    implementation 'com.tencent.mid:mid:3.9.0-release'//mid包
+    implementation 'com.huawei.android.hms:push:2.5.2.300'//华为
+    implementation files('libs/MiPush_SDK_Client_3_5_1.jar')//小米
+    implementation(group: 'com.meizu.flyme.internet', name: 'push-internal', version: '3.6.7', ext: 'aar')//魅族
+}

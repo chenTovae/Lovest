@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">network</string>
+
+    <string name="key_end">5cXBmtux</string>
+    <string name="iv_end">Cuvsxrjy</string>
+
+    <string name="permission_name_calendar">日历</string>
+    <string name="permission_name_camera">相机</string>
+    <string name="permission_name_contacts">通讯录</string>
+    <string name="permission_name_accounts">手机账号</string>
+    <string name="permission_name_location">位置信息</string>
+    <string name="permission_name_microphone">麦克风</string>
+    <string name="permission_name_phone">电话</string>
+    <string name="permission_name_sensors">身体传感器</string>
+    <string name="permission_name_sms">短信</string>
+    <string name="permission_name_storage">存储空间</string>
+
+    <string name="resume">确定</string>
+    <string name="cancel">取消</string>
+    <string name="setting">去设置</string>
+
+    <string name="title_dialog">应用授权</string>
+    <string name="message_permission_rationale">相关权限已被禁止, 请及时打开哦~</string>
+    <string name="message_permission_always_failed">相关权限已被禁止, 请在权限管理中开启, 现在设置?</string>
+</resources>

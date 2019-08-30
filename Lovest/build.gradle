@@ -1,0 +1,31 @@
+apply from: "config.gradle"
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.0-alpha07'
+        classpath 'me.tatarka:gradle-retrolambda:3.7.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+        //TODO 华为推送maven地址
+        maven { url 'http://developer.huawei.com/repo/' }
+        //TODO 魅族推送maven地址
+        maven { url 'https://oss.jfrog.org/artifactory/oss-snapshot-local' }
+        maven { url 'http://artifactory.rnd.meizu.com/artifactory/all' }
+        //TODO 个推推送maven地址
+        maven { url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

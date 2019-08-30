@@ -1,0 +1,10 @@
+ext {
+    Properties localProperties = new Properties()
+    localProperties.load(project.rootProject.file('local_ci.properties').newDataInputStream())
+    android = [
+    ]
+    thirdLib = [
+    ]
+    dependencies = [
+    ]
+}
